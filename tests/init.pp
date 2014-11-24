@@ -1,1 +1,1 @@
-include mssql2014
+include hmail-install
