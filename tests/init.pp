@@ -1,1 +1,1 @@
-include hmail-install
+include hmailserver
