@@ -1,0 +1,18 @@
+{
+  "name": "hmailserver",
+  "version": "0.1.1",
+  "author": "Pierrick Lozach",
+  "summary": "Installs hMailServer via chocolatey",
+  "license": "Apache-2.0",
+  "source": "https://github.com/PierrickI3/hmailserver",
+  "project_page": "https://github.com/PierrickI3/hmailserver",
+  "issues_url": "https://github.com/PierrickI3/hmailserver/issues",
+  "dependencies": [
+    {"name":"chocolatey/chocolatey","version_requirement":">= 1.0.2"}
+  ],
+  "operatingsystem_support":[
+    {
+      "operatingsystem":"Windows"
+    }
+  ]
+}
