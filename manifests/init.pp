@@ -1,15 +1,37 @@
-# == class: hmail-install
+# == Class: hmailserver
+#
+# Installs hMailServer (https://www.hmailserver.com) via chocolatey
+#
+# === Parameters
+#
+# [ensure]
+#   installed. No other values are currently supported.
+#
+# === Examples
+#
+#  class {'hmailserver':
+#   ensure => installed,
+#  }
+#
+# === Authors
+#
+# Pierrick Lozach <pierrick.lozach@inin.com>
+#
+# === Copyright
+#
+# Copyright 2015, Interactive Intelligence Inc.
 #
 
-class hmail-install(
+class hmailserver(
   $ensure = installed,
+  $source,
 )
 {
 
-  if ($operatingsystem != 'Windows')
+  if ($::operatingsystem != 'Windows')
   {
-    err("This module works on Windows only!")
-    fail("Unsupported OS")
+    err('This module works on Windows only!')
+    fail('Unsupported OS')
   }
 
   package {
@@ -22,7 +44,7 @@ class hmail-install(
     {
       notice('Installing hMail server')
 
-      package { "hmailserver":
+      package { 'hmailserver':
         ensure => present,
       }
       
@@ -31,7 +53,7 @@ class hmail-install(
     {
       notice('Uninstalling hMail server')
 
-      package { "hmailserver":
+      package { 'hmailserver':
         ensure => absent,
       }
 
