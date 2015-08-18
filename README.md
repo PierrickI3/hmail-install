@@ -7,7 +7,7 @@ Requires Chocolatey
 
 Example:
 ```puppet
-class {'hmail-install':
+class {'hmailserver':
     ensure	=> installed,
     }
 ```
