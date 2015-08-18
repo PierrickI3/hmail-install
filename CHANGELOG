@@ -3,3 +3,5 @@
 Summary:
 
 Added code to install hMail server via chocolatey
+
+2015-08-18: Renamed to hmailserver
