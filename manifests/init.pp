@@ -24,7 +24,6 @@
 
 class hmailserver(
   $ensure = installed,
-  $source,
 )
 {
 
@@ -34,10 +33,6 @@ class hmailserver(
     fail('Unsupported OS')
   }
 
-  package { 'chocolatey':
-    provider => chocolatey,
-  }
-  
   case $ensure
   {
     installed:
@@ -45,7 +40,8 @@ class hmailserver(
       notice('Installing hMail server')
 
       package { 'hmailserver':
-        ensure => present,
+        ensure   => present,
+        provider => chocolatey,
       }
       
     }
@@ -54,7 +50,8 @@ class hmailserver(
       notice('Uninstalling hMail server')
 
       package { 'hmailserver':
-        ensure => absent,
+        ensure   => absent,
+        provider => chocolatey,
       }
 
     }
