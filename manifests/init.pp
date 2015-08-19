@@ -34,7 +34,7 @@ class hmailserver(
     fail('Unsupported OS')
   }
 
-  package {
+  package { 'chocolatey':
     provider => chocolatey,
   }
   
