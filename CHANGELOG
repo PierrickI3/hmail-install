@@ -1,7 +1,4 @@
-2014-11-24 - Version 0.1.0
-
-Summary:
-
-Added code to install hMail server via chocolatey
-
+2014-11-24: Added code to install hMail server via chocolatey
 2015-08-18: Renamed to hmailserver
+2015-08-19: Fixed dependency on chocolatey
+2015-08-19: Added name to a package entry to pass parser validation
