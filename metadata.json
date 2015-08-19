@@ -1,5 +1,5 @@
 {
-  "name": "hmailserver",
+  "name": "PierrickL-hmailserver",
   "version": "0.1.1",
   "author": "Pierrick Lozach",
   "summary": "Installs hMailServer via chocolatey",
