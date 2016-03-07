@@ -43,7 +43,7 @@ class hmailserver(
         ensure   => present,
         provider => chocolatey,
       }
-      
+
     }
     uninstalled:
     {

@@ -1,1 +1,3 @@
-include hmailserver
+class {'hmailserver':
+   ensure => installed,
+}

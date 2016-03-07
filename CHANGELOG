@@ -4,3 +4,4 @@
 2015-08-19: Added name to a package entry to pass parser validation
 2015-08-19: Changed where chocolatey is specified in package entries
 2015-08-19: Removed source parameter
+2016-03-04: Added test
